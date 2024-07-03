@@ -1,0 +1,160 @@
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.8vw;
+}
+
+a:hover {
+  color: rgb(51, 84, 248);
+}
+
+a:active {
+  color: rgb(51, 84, 248);
+}
+
+/* Stiluri pentru back-link */
+.back-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding-left: 4vw;
+}
+
+.back-link:hover {
+  color: rgb(51, 84, 248);
+}
+
+/* Stiluri pentru săgeată */
+.back-link::before {
+  content: '←';
+  font-size: 3.8vw;
+  position: absolute;
+  top: -3.2vh;
+  left: 0;
+  transition: color 0.3s;
+  animation: moveArrow 3s infinite;
+}
+
+@keyframes moveArrow {
+  0% {
+    left: -7vw;
+  }
+  50% {
+    left: 0px;
+  }
+  51% {
+    left: 0px;
+  }
+  100% {
+    left: -7vw;
+  }
+}
+
+.timerPosition {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.date-button-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  margin-bottom: 5vh;
+}
+
+#datetime-picker {
+  width: 60vw;
+  height: 5vh;
+  font-size: 1.5vw;
+  padding: 0.5vw;
+  border: 1px solid #ccc;
+  border-radius: 0.5vw;
+  margin-bottom: 2vh;
+}
+
+button[type='button'] {
+  width: 20vw;
+  height: 5vh;
+  font-size: 1.5vw;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 4vh;
+}
+
+button[type='button']:hover {
+  background-color: #518554;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  background-color: white;
+  padding: 2vw;
+  border-radius: 1vw;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5vw;
+}
+
+.value {
+  font-size: 3vw;
+  font-weight: bold;
+  margin-bottom: 0.5vh;
+}
+
+.label {
+  font-size: 1.2vw;
+  color: #777;
+}
+
+.flatpickr-calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: auto;
+  width: auto;
+  height: auto;
+}
+
+.flatpickr-time input {
+  font-size: auto;
+}
+
+.flatpickr-day {
+  height: auto;
+
+  width: auto;
+}
+
+.flatpickr-month {
+  font-size: auto;
+}
+
+.flatpickr-weekday {
+  font-size: auto;
+}
+
+.flatpickr-time {
+  font-size: auto;
+}

@@ -1,0 +1,59 @@
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.8vw;
+}
+
+a:hover {
+  color: rgb(51, 84, 248);
+}
+
+a:active {
+  color: rgb(51, 84, 248);
+}
+
+/* Stiluri pentru back-link */
+.back-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding-left: 4vw;
+}
+
+.back-link:hover {
+  color: rgb(51, 84, 248);
+}
+
+/* Stiluri pentru săgeată */
+.back-link::before {
+  content: '←';
+  font-size: 3.8vw;
+  position: absolute;
+  top: -3.2vh;
+  left: 0;
+  transition: color 0.3s;
+  animation: moveArrow 3s infinite;
+}
+
+@keyframes moveArrow {
+  0% {
+    left: -7vw;
+  }
+  50% {
+    left: 0px;
+  }
+  51% {
+    left: 0px;
+  }
+  100% {
+    left: -7vw;
+  }
+}
+
+li {
+  list-style-type: none;
+}
